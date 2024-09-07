@@ -2,14 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Contact form</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <main class="contact">
+    <h1>Contact us</h1>
+    <form class="contact-form">
+      <fieldset>
+        <p class="first-name">
+          <label for="first-name">First Name *</label>
+          <input type="text" name="first-name" id="first-name">
+        </p>
+        <p class="form-alert">This field is required</p>
+        <p class="last-name"></p>
+          <label for="last-name">Last Name *</label>
+          <input type="text" name="last-name" id="last-name">
+        </p>
+        <p class="form-alert">This field is required</p>
+        <p class="last-name"></p>
+          <label for="last-name">Last Name *</label>
+          <input type="text" name="last-name" id="last-name">
+        </p>
+        <p class="form-alert">This field is required</p>
+        
+        <label for="query-type">Query Type *</label>
+        <fieldset class="radio-inputs" >
+            <p class="radio-option">
+              <label for="general-enquiry">General Enquiry</label>  
+              <input type="radio" name="query-type" id="general-enquiry" value="General Enquiry">
+            </p>
+
+            <p class="radio-option">
+              <label for="support-request">Support Request</label>  
+              <input type="radio" name="query-type" id="support-request" value="Support Raequest">
+            </p>
+        </fieldset>
+        <p class="form-alert">Please select a query type</p>
+        
+        <label for="message">Message *</label>
+        <textarea name="message" id="message" rows="4" maxlength="400"></textarea>
+        <p class="form-alert">This field is required</p>
+
+        <label for="consent">I consent to being contacted by the team *</label>
+        <input type="checkbox" name="consent" id="consent">
+        <p class="form-alert">To submit this form, please consent to being contacted</p>
+    
+      </fieldset>
+      <button type="submit" id="sybmit-btn" class="submit-btn">Submit</button>
+    </form>
+
+    <section id="success-message">
+      <div class="message-header">
+          <img src="./assets/images/icon-success-check.svg" class="message-header" alt="icon success">
+          <h2>Message Sent!</h2>
+      </div>
+
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+   </section>
+  </main>
+ 
 
  <!--  Contact Us
 
