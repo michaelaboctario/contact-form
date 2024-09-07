@@ -37,12 +37,17 @@ fieldset {
     display: flex;
     flex-direction: column;
 }
-
 .form-alert {
     display: none;
-}
+    color: var(--red);
+    margin-top: .8rem;
+  }
 
-#success-message {
+ /*  .form-alert.form-error {
+    display: block;
+  }
+# */
+success-message {
     display: none;
 }
 
@@ -67,6 +72,26 @@ input[type="email"],
 input[type="checkbox"],
 textarea {
     margin-top: .8rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid var(--medium-green);
+  border: 1px solid var(--medium-green);
+}
+
+input[type="text"].form-error,
+input[type="email"].form-error {
+  border: 1px solid var(--red);
+}
+
+input[type="checkbox"] {
+    accent-color: var(--medium-green);
+}
+
+input[type="radio"] {
+    background-color: var(--medium-green);
+    outline: 1 solid var(--medium-grey);
 }
 
 .contact-card {
