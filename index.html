@@ -19,37 +19,45 @@
           <input type="text" name="first-name" id="first-name">
         </p>
         <p class="form-alert">This field is required</p>
-        <p class="last-name"></p>
+        <p class="last-name">
           <label for="last-name">Last Name *</label>
           <input type="text" name="last-name" id="last-name">
         </p>
         <p class="form-alert">This field is required</p>
-        <p class="last-name"></p>
-          <label for="last-name">Last Name *</label>
-          <input type="text" name="last-name" id="last-name">
-        </p>
-        <p class="form-alert">This field is required</p>
-        
-        <label for="query-type">Query Type *</label>
-        <fieldset class="radio-inputs" >
-            <p class="radio-option">
-              <label for="general-enquiry">General Enquiry</label>  
-              <input type="radio" name="query-type" id="general-enquiry" value="General Enquiry">
-            </p>
+      </fieldset>
 
-            <p class="radio-option">
-              <label for="support-request">Support Request</label>  
-              <input type="radio" name="query-type" id="support-request" value="Support Raequest">
-            </p>
+      <fieldset>
+        <p class="email">
+          <label for="email">Email Address *</label>
+          <input type="email" name="email" id="email">  
+        </p>
+        <p class="form-alert">Please enter a valid email address</p>
+      </fieldset> 
+
+        <fieldset class="radio-inputs" >
+          <p class="query-type">Query Type *</p>
+          <p class="radio-option-general">
+            <input type="radio" name="query-type" id="general-enquiry" value="General Enquiry">
+            <label for="general-enquiry">General Enquiry</label>  
+          </p>
+
+          <p class="radio-option-support">
+            <input type="radio" name="query-type" id="support-request" value="Support Raequest">
+            <label for="support-request">Support Request</label>  
+          </p>
         </fieldset>
         <p class="form-alert">Please select a query type</p>
         
-        <label for="message">Message *</label>
-        <textarea name="message" id="message" rows="4" maxlength="400"></textarea>
+        <p>
+          <label for="message">Message *</label>
+          <textarea name="message" id="message" rows="8" maxlength="800"></textarea>
+        </p>
         <p class="form-alert">This field is required</p>
-
-        <label for="consent">I consent to being contacted by the team *</label>
-        <input type="checkbox" name="consent" id="consent">
+        
+        <p class="check-consent">
+          <input type="checkbox" name="consent" id="consent">
+          <label for="consent">I consent to being contacted by the team *</label>
+        </p>     
         <p class="form-alert">To submit this form, please consent to being contacted</p>
     
       </fieldset>
