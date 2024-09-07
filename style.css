@@ -69,11 +69,6 @@ textarea {
     margin-top: .8rem;
 }
 
-.check-consent {
-    margin-top: 1.3rem;
-    margin-bottom: 1.5rem;
-}
-
 .contact-card {
     background-color: var(--white);
     margin: 1rem;
@@ -97,7 +92,16 @@ p {
 .check-consent {
     display: flex;
     gap: 1.4rem;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: start;
+    margin-top: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.check-consent #consent {
+    width: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
   .submit-btn {
