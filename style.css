@@ -94,6 +94,11 @@ p {
     margin-top: 1.2rem;
 }
 
+.check-consent {
+    display: flex;
+    gap: 1.4rem;
+    align-items: flex-start;
+}
 
   .submit-btn {
     background-color: var(--medium-green);
