@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
  -->
+ <script defer src="./script.js"></script>
 </head>
 <body>
   <main >
@@ -26,54 +27,58 @@
 
     <section id="contact-card">
       <h1>Contact Us</h1>
-    <form class="contact-form">
-      <fieldset class="name__card">
-        <p class="first-name">
-          <label for="first-name">First Name *</label>
-          <input type="text" name="first-name" id="first-name">
-        </p>
-        <p class="form-alert">This field is required</p>
-        <p class="last-name">
-          <label for="last-name">Last Name *</label>
-          <input type="text" name="last-name" id="last-name">
-        </p>
-        <p class="form-alert">This field is required</p>
-      </fieldset>
-
-      <p class="email">
-        <label for="email">Email Address *</label>
-        <input type="email" name="email" id="email">  
-      </p>
-      <p class="form-alert">Please enter a valid email address</p>
-
-      <p class="query-type">Query Type *</p>
-        <fieldset class="query__card" >
-          <p class="radio-option-general">
-            <input type="radio" name="query-type" id="general-enquiry" value="General Enquiry">
-            <label for="general-enquiry">General Enquiry</label>  
-          </p>
-
-          <p class="radio-option-support">
-            <input type="radio" name="query-type" id="support-request" value="Support Raequest">
-            <label for="support-request">Support Request</label>  
-          </p>
+      <form id="contact-form" action="/">
+        <fieldset class="name__card">
+          <div class="field__card">
+            <label for="first-name">First Name *</label>
+            <input type="text" name="first-name" id="first-name">
+            <p class="first-name form-alert">This field is required</p>
+          </div>
+          <div class="field__card">
+            <label for="last-name">Last Name *</label>
+            <input type="text" name="last-name" id="last-name">
+            <p class="last-name form-alert">This field is required</p>
+          </div>          
         </fieldset>
-        <p class="form-alert">Please select a query type</p>
+
+        <div class="field__card">
+          <label for="email">Email Address *</label>
+          <input type="email" name="email" id="email">  
+          <p class="email form-alert">Please enter a valid email address</p>
+        </div>
         
-        <p>
+        <div class="field__card">
+          <p class="query-type">Query Type *</p>
+          <fieldset class="query__card" >
+            <p class="radio-option-general">
+              <input type="radio" name="query-type" id="general-enquiry" value="General Enquiry">
+              <label for="general-enquiry">General Enquiry</label>  
+            </p>
+
+            <p class="radio-option-support">
+              <input type="radio" name="query-type" id="support-request" value="Support Raequest">
+              <label for="support-request">Support Request</label>  
+            </p>
+          </fieldset>
+          <p class="query-type form-alert">Please select a query type</p>
+        </div>
+        
+          
+        <div class="field__card">
           <label for="message">Message *</label>
           <textarea name="message" id="message" rows="3" maxlength="800"></textarea>
-        </p>
-        <p class="form-alert">This field is required</p>
-        
-        <p class="check-consent">
+          <p class="message form-alert">This field is required</p>
+        </div>
+          
+        <div class="field__card check-consent__field">
           <input type="checkbox" name="consent" id="consent">
           <label for="consent">I consent to being contacted by the team *</label>
-        </p>     
-        <p class="form-alert">To submit this form, please consent to being contacted</p>
-    
-      <button type="submit" id="sybmit-btn" class="submit-btn">Submit</button>
-    </form>
+        </div>   
+        <p class="check-consent__alert form-alert">To submit this form, please consent to being contacted</p>
+   
+             
+        <button type="submit" id="sybmit-btn" class="submit-btn">Submit</button>
+      </form>
     </section>
   </main>
 </body>
