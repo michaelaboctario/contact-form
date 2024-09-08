@@ -8,12 +8,26 @@
   
   <title>Frontend Mentor | Contact form</title>
   <link rel="stylesheet" href="style.css">
+
+ <!--  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+ -->
 </head>
 <body>
-  <main class="contact-card">
-    <h1>Contact us</h1>
+  <main >
+      <section id="success-message">
+        <div class="message-header">
+            <img src="./assets/images/icon-success-check.svg" class="message-header" alt="icon success">
+            <h2>Message Sent!</h2>
+        </div>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </section>
+
+    <section id="contact-card">
+      <h1>Contact Us</h1>
     <form class="contact-form">
-      <fieldset>
+      <fieldset class="name__card">
         <p class="first-name">
           <label for="first-name">First Name *</label>
           <input type="text" name="first-name" id="first-name">
@@ -32,8 +46,8 @@
       </p>
       <p class="form-alert">Please enter a valid email address</p>
 
-        <fieldset class="radio-inputs" >
-          <p class="query-type">Query Type *</p>
+      <p class="query-type">Query Type *</p>
+        <fieldset class="query__card" >
           <p class="radio-option-general">
             <input type="radio" name="query-type" id="general-enquiry" value="General Enquiry">
             <label for="general-enquiry">General Enquiry</label>  
@@ -60,45 +74,7 @@
     
       <button type="submit" id="sybmit-btn" class="submit-btn">Submit</button>
     </form>
-
-    <section id="success-message">
-      <div class="message-header">
-          <img src="./assets/images/icon-success-check.svg" class="message-header" alt="icon success">
-          <h2>Message Sent!</h2>
-      </div>
-
-      <p>Thanks for completing the form. We'll be in touch soon!</p>
-   </section>
+    </section>
   </main>
- 
-
- <!--  Contact Us
-
-  First Name
-  This field is required
-
-  Last Name
-  This field is required
-
-  Email Address
-  Please enter a valid email address
-  This field is required
-
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
-
-  Message
-  This field is required
-
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
-
-  Submit
-
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon! -->
-
 </body>
 </html>
