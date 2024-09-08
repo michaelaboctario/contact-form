@@ -23,10 +23,10 @@ form.addEventListener('submit', (e) => {
         isValid = false;    
         firstNameElmError.textContent = "Enter a valid name";
         firstNameElmError.style.display = "block";
-        document.querySelector("#first-name").style.border = "1px solid var(--red)";
+        document.getElementById("first-name").style.border = "1px solid var(--red)";
     } else {
         firstNameElmError.style.display = "none";
-        document.querySelector("#first-name").style.border = "1px solid var(--medium-grey)";
+        document.getElementById("first-name").style.border = "1px solid var(--medium-grey)";
     }
 
     const lastNameElmError = document.getElementsByClassName("last-name form-alert")[0]; 
@@ -34,20 +34,20 @@ form.addEventListener('submit', (e) => {
         isValid = false;    
         lastNameElmError.textContent = "Enter a valid name";
         lastNameElmError.style.display = "block";
-        document.querySelector("#last-name").style.border = "1px solid var(--red)";
+        document.getElementById("last-name").style.border = "1px solid var(--red)";
     } else {
         firstNameElmError.style.display = "none";
-        document.querySelector("#last-name").style.border = "1px solid var(--medium-grey)";
+        document.getElementById("last-name").style.border = "1px solid var(--medium-grey)";
     }
     
     const emailElmError = document.getElementsByClassName("email form-alert")[0]; 
     if(!isValidEmail(email)) {
         isValid = false;
         emailElmError.style.display = "block";
-        document.querySelector("#email").style.border = "1px solid var(--red)";        
+        document.getElementById("email").style.border = "1px solid var(--red)";        
     } else {
         emailElmError.style.display = "none";
-        document.querySelector("#email").style.border = "1px solid var(--medium-grey)";
+        document.getElementById("email").style.border = "1px solid var(--medium-grey)";
     }
 
     // Query Validation
@@ -64,10 +64,10 @@ form.addEventListener('submit', (e) => {
     if(message === "") {
         isValid = false;
         messageElmError.style.display = "block";
-        messageElmError.style.border = "1px solid var(--red)";
+        document.getElementById("message").style.border = "1px solid var(--red)";
     } else {
         messageElmError.style.display = "none";
-        messageElmError.style.border = "1px solid var(--medium-grey)";
+        document.getElementById("message").style.border = "1px solid var(--medium-grey)";
     }
 
     // Consent Validation 
