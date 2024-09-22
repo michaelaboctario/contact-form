@@ -194,10 +194,6 @@ input[type="radio"] {
     gap: .5rem;
   }
   
- /* #success-message.visible {
-    display: block;
-  }  */
-
   @media only screen and (min-width: 768px) {
     body {
         min-height: 100vh;
@@ -243,7 +239,6 @@ input[type="radio"] {
     .check-consent__field {
         gap: 1.2rem;
         margin-top: 0.8rem;
-        /* margin-bottom: 1rem; */
     }
     
     #success-message {
@@ -252,6 +247,5 @@ input[type="radio"] {
     
     .success-message .message-header {
         margin-bottom: 0;
-        /* gap: .3rem; */
     }
 }
